@@ -9,6 +9,7 @@ services:
     environment:
       FLIPT_SERVER_HTTP_PORT: 8002
       FLIPT_CORS_ENABLED: true
+      FLIPT_CORS_ALLOWED_HEADERS: "Accept Authorization Content-Type X-CSRF-Token X-Fern-Language X-Fern-SDK-Name X-Fern-SDK-Version X-Flipt-Namespace X-Flipt-Accept-Server-Version X-Flipt-Environment If-None-Match"
     ports:
       - 8002:8002
       - 9000:9000
